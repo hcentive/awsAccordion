@@ -491,10 +491,11 @@
 
         // Slide Content
         slideContent : function (ev) {
-          var $target = $(ev.target);
+          var $target = $(ev.target),
+          hrSliderContentDivSelecter = 'div.hr-slider-content';
           //prevent on div selector, preventing from clicking or mouseovering div
-          if ($target.parent().is(headLis) || $target.parents().is('div.hr-slider-content')) {
-            return false;
+          if ($target.is(hrSliderContentDivSelecter) || $target.parents().is(hrSliderContentDivSelecter)) {
+            return;
           }
 
           var selector = $(ev.currentTarget),
