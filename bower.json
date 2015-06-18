@@ -1,0 +1,15 @@
+{
+  "name": "awsaccordion",
+  "version": "1.1.0",
+  "description": "awsAccordion - a horizontal accordion plugin for jQuery",
+  "main": "jquery.accordion.js",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
