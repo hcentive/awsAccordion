@@ -378,7 +378,10 @@
                   }
                 });
 
-              } else {
+              } 
+              // Removing onresize as it causes issue in ie 9
+              /**
+              else {
 
                 window.onresize = function (event) {
                   methods.matchQueryMedia();
@@ -387,6 +390,7 @@
                 };
 
               }
+              **/
             }
 
             //Set attrs for each li and div inside Horizontal       
